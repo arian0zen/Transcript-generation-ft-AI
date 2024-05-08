@@ -16,8 +16,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@distube/ytdl-core": "^4.13.3",
-    "@pinecone-database/pinecone": "^0.0.12",
+    "@langchain/openai": "^0.0.22",
+    "@langchain/pinecone": "^0.0.3",
+    "@pinecone-database/pinecone": "^2.1.0",
     "axios": "^0.26.1",
     "concurrently": "^8.0.1",
     "core-js": "^3.30.1",
