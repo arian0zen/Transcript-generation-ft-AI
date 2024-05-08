@@ -21,10 +21,11 @@ const searchYouTubeVideos = async (
     // Extract video details from the search results
     const videoDetails = searchResults.items.map((item) => ({
       title: item.title,
-      url: item.url,
+      url: item?.url,
       duration: item.duration,
       videoId: item.id,
-      thumbnail: item.bestThumbnail.url, // Get the URL of the best quality thumbnail
+      thumbnail: item.bestThumbnail?.url, // Get the URL of the best quality thumbnail
+      channelName: item.author?.name || "Unknown",
     }));
 
     return videoDetails;
